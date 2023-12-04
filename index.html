@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>OFERTA DO DIA</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+          <h2 class="titulo-cabecalho">MARKETPLACE</h2>
+        </nav>
+        
+        <ul>
+      
+         <a class="a-nav" href="#Home">Home</a>
+        
+         <a class="a-nav" href="#titulo-inferior" class="link-cabecalho">Quem Somos</a>
+         
+         <a class="a-nav" href="#titulo-meio" class="link-cabecalho">Serviços</a>
+
+         <a class="a-nav" onclick="mostreOForm()">Contato</a>
+      
+      
+      
+      
+      </div>
+       </header>
+
+
+
+
+    <div class="caixa-superior">
+        <div class="cabecalho">
+           
+           
+        </div>
+
+        <h1>OFERTA DO DIA</h1>
+
+        <form id="formulario-contato" action="https://formsubmit.co/priscilanasc93@hotmail.com" method="POST">
+            <h3 class="titulo-formulario">Entre em contato</h3>
+
+            <label>
+                Nome
+                <input type="text" name="Nome" placeholder="Digite seu Nome" required/>
+            </label>
+            
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="Digite seu E-mail" required/>
+            </label>
+            
+            <label>
+                Telefone
+                <input type="tel" name="telefone" placeholder="Digite seu telefone" required/>
+            </label>
+            
+            <label>
+                Rua
+                <input type="text" name="rua" placeholder="Digite sua rua" required/>
+            </label>
+            
+            <label>
+                Número
+                <input type="text" name="numero" placeholder="Digite o número" required/>
+            </label>
+            
+            <label>
+                Bairro
+                <input type="text" name="bairro" placeholder="Digite seu bairro" required/>
+            </label>
+            
+            <label>
+                
+                <select name="tipo_usuario" required>
+                    <option value="" disabled selected>Selecione o tipo de usuário</option>
+                    <option value="visitante">Visitante</option>
+                    <option value="anunciante">Anunciante</option>
+                </select><br><br>
+            </label>
+              
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <h2 id="titulo-meio">Nossos serviços</h2>
+
+    <div class="caixa-central">
+        <div class="card">
+            <h3 class="titulo-card">ENCARTE SUPERMERCADO</h3>
+            <ul>
+                
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">ENCARTE SUPERMERCADO</h3>
+            
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">ENCARTE SUPERMERCADO</h3>
+            
+        </div>
+    </div>
+
+
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior">
+            Somos uma plataforma dedicada a simplificar sua experiência de compra, concentrando todos os encartes promocionais dos principais supermercados da cidade em um único lugar. Nosso objetivo é proporcionar a você, cliente, acesso fácil e conveniente a uma variedade de ofertas e promoções para que possa tomar decisões informadas na hora de suas compras.
+
+Aqui, você encontrará uma compilação abrangente dos encartes dos supermercados locais, oferecendo uma visão clara e detalhada das melhores ofertas do dia. Todos os supermercados são bem-vindos em nossa plataforma, garantindo que você tenha acesso a uma ampla gama de opções para escolher.
+
+Nossa missão é simplificar sua busca pela melhor oferta, economizando seu tempo e dinheiro. Queremos ser seu parceiro confiável na jornada de compras, ajudando-o a identificar as promoções mais atrativas e a tomar decisões inteligentes para suas necessidades do dia a dia.
+
+Junte-se a nós e descubra como podemos facilitar sua experiência de compras, proporcionando informações atualizadas sobre ofertas e descontos para que você possa aproveitar ao máximo suas visitas aos supermercados locais.
+
+Seja bem-vindo à nossa plataforma, onde a escolha da melhor oferta está ao alcance de um clique.
+        </p>
+    </div>
+</body>
+<script>
+let formulario = document.getElementById("formulario-contato")
+
+
+function mostreOForm  (){
+    formulario.className = "mostrar-formulario"
+}
+
+
+
+</script>
+</html>
